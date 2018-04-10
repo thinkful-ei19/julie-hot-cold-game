@@ -6,9 +6,9 @@ import Nav from './nav';
 export default function App(){
     return(
         <div>
-            <header>
-            </header>
-            
+            <Nav />
+            <Game />
+            <Feedback />
         </div>
     )
 }

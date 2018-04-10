@@ -3,7 +3,7 @@ import './game.css';
 
 
 export default function Game(props) {
-  return (
+    return (
       <div className="game">
           <h1>HOT or COLD</h1>
         <form>
@@ -11,9 +11,11 @@ export default function Game(props) {
             <p>
                 <input type="text" className="userGuess" />
             </p>
+            <button type="submit" name="submit" id="guessButton" classname="button">Guess</button>
             <p className="guessCount">
-                Guess # <span className="active-number">{props.guessNum}</span>
+                <span className="guessCount">Guess #</span>
             </p>
+            {/* will need prevent default */}
         </form>
       </div>
   )
